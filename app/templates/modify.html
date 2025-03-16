@@ -1,15 +1,15 @@
-<!--Шаблон для страницы регистрации-->
-<!--Добавляем форму регистрации-->
+<!--Шаблон для страницы изменения профиля-->
+<!--Добавляем форму изменения профиля-->
 
 {% extends "base.html" %}
 
 {% block title %}
-    Регистрация
+    Изменения профиля
 {% endblock %}
 
 {% block content %}
-    <h1>Регистрация</h1>
-    <form method="POST" action="{{ url_for('register') }}">
+    <h1>Изменения профиля</h1>
+    <form method="POST" action="{{ url_for('modify') }}">
         {{ form.hidden_tag() }}
         <div>
             {{ form.username.label }}<br>

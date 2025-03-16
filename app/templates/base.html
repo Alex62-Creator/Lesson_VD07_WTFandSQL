@@ -19,6 +19,7 @@
             <li class="nav-item"><a href="{{ url_for('home') }}">Home</a>&nbsp;&nbsp;&nbsp;</li>
             {% if current_user.is_authenticated %}
                 <li class="nav-item"><a href="{{ url_for('account') }}">Account</a>&nbsp;&nbsp;&nbsp;</li>
+                <li class="nav-item"><a href="{{ url_for('modify') }}">Modify</a>&nbsp;&nbsp;&nbsp;</li>
                 <li class="nav-item"><a href="{{ url_for('logout') }}">Logout</a>&nbsp;&nbsp;&nbsp;</li>
             {% else %}
                 <li class="nav-item"><a href="{{ url_for('login') }}">Login</a>&nbsp;&nbsp;&nbsp;</li>
